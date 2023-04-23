@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="static/css/style.css">
+   <link rel="stylesheet" href="static/css/bootstrap.min.css.map">
+   <link rel="stylesheet" href="static/css/bootstrap.min.css">
+   <!--google-font-start-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anuphan&family=IBM+Plex+Sans+Arabic:wght@700&family=Libre+Baskerville:wght@700&family=Merriweather:ital@1&family=Noto+Sans+SC:wght@100&family=Noto+Sans+Zanabazar+Square&family=Playfair+Display:wght@900&family=Roboto+Slab:wght@900&family=Schibsted+Grotesk:wght@500&family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anuphan&family=IBM+Plex+Sans+Arabic:wght@700&family=Libre+Baskerville:wght@700&family=Merriweather:ital@1&family=Noto+Sans+SC:wght@100&family=Noto+Sans+Zanabazar+Square&family=Playfair+Display:wght@900&family=Roboto+Slab:wght@900&family=Schibsted+Grotesk:wght@500&family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anuphan&family=Bruno+Ace+SC&family=IBM+Plex+Sans+Arabic:wght@700&family=Libre+Baskerville:wght@700&family=Merriweather:ital@1&family=Noto+Sans+SC:wght@100&family=Noto+Sans+Zanabazar+Square&family=Playfair+Display:wght@900&family=Roboto+Slab:wght@900&family=Schibsted+Grotesk:wght@500&family=Source+Sans+Pro:ital@1&display=swap" 
+rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anuphan&family=Bruno+Ace+SC&family=Castoro+Titling&family=IBM+Plex+Sans+Arabic:wght@700&family=Libre+Baskerville:wght@700&family=Merriweather:ital@1&family=Noto+Sans+SC:wght@100&family=Noto+Sans+Zanabazar+Square&family=Playfair+Display:wght@900&family=Roboto+Slab:wght@900&family=Schibsted+Grotesk:wght@500&family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anuphan&family=Bruno+Ace+SC&family=Castoro+Titling&family=IBM+Plex+Sans+Arabic:wght@700&family=Libre+Baskerville:wght@700&family=Merriweather:ital@1&family=Noto+Sans+SC:wght@100&family=Noto+Sans+Zanabazar+Square&family=Playfair+Display:wght@900&family=Roboto+Slab:wght@300;900&family=Schibsted+Grotesk:wght@500&family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anuphan&family=Bruno+Ace+SC&family=Castoro+Titling&family=IBM+Plex+Sans+Arabic:wght@700&family=Libre+Baskerville:wght@700&family=Merriweather:ital@1&family=Noto+Sans+SC:wght@100&family=Noto+Sans+Zanabazar+Square&family=Playfair+Display:wght@500;900&family=Roboto+Slab:wght@300;900&family=Schibsted+Grotesk:wght@500&family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anuphan&family=Bruno+Ace+SC&family=Castoro+Titling&family=IBM+Plex+Sans+Arabic:wght@700&family=Libre+Baskerville:wght@700&family=Merriweather:ital@1&family=Noto+Sans+SC:wght@100&family=Noto+Sans+Zanabazar+Square&family=Noto+Sans:wght@300;400&family=Playfair+Display:wght@500;900&family=Roboto+Slab:wght@300;900&family=Schibsted+Grotesk:wght@500&family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anuphan&family=Bruno+Ace+SC&family=Castoro+Titling&family=IBM+Plex+Sans+Arabic:wght@700&family=Libre+Baskerville:wght@700&family=Merriweather:ital@1&family=Noto+Sans+SC:wght@100&family=Noto+Sans+Zanabazar+Square&family=Noto+Sans:wght@300;400&family=Playfair+Display:wght@500;900&family=Roboto&family=Roboto+Slab:wght@300;900&family=Schibsted+Grotesk:wght@500&family=Source+Sans+Pro:ital@1&family=Ysabeau:wght@400;800&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anuphan&family=Bruno+Ace+SC&family=Carlito&family=Castoro+Titling&family=IBM+Plex+Sans+Arabic:wght@700&family=Libre+Baskerville:wght@700&family=Merriweather:ital@1&family=Noto+Sans+SC:wght@100&family=Noto+Sans+Zanabazar+Square&family=Noto+Sans:wght@300;400&family=Playfair+Display:wght@500;900&family=Roboto&family=Roboto+Slab:wght@300;900&family=Schibsted+Grotesk:wght@500&family=Source+Sans+Pro:ital@1&family=Ysabeau:wght@500;800&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anuphan&family=Bruno+Ace+SC&family=Carlito&family=Castoro+Titling&family=IBM+Plex+Sans+Arabic:wght@700&family=Libre+Baskerville:wght@700&family=Merriweather:ital@1&family=Noto+Sans+SC:wght@100&family=Noto+Sans+Zanabazar+Square&family=Noto+Sans:wght@300;400&family=Nunito:wght@300&family=Playfair+Display:wght@500;900&family=Roboto&family=Roboto+Slab:wght@300;900&family=Schibsted+Grotesk:wght@500&family=Source+Sans+Pro:ital@1&family=Ysabeau:wght@500;800&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anuphan&family=Bruno+Ace+SC&family=Carlito&family=Castoro+Titling&family=IBM+Plex+Sans+Arabic:wght@700&family=Libre+Baskerville:wght@700&family=Merriweather:ital@1&family=Montserrat:wght@500&family=Noto+Sans+SC:wght@100&family=Noto+Sans+Zanabazar+Square&family=Noto+Sans:wght@300;400&family=Nunito:wght@300&family=Playfair+Display:wght@500;900&family=Roboto&family=Roboto+Slab:wght@300;900&family=Schibsted+Grotesk:wght@500&family=Source+Sans+Pro:ital@1&family=Ysabeau:wght@500;800&display=swap" rel="stylesheet">
+
+
+
+
+
+
+<!-- google-font-end -->
+<!-- icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <title>Document</title>
+
+   <!-- boot -->
+
+</head>
+<body>
+   <div class="wrapper">
+<!-- scrollable-container  -->
+      <div class=" scrollable-container " data-bs-spy="scroll" data-bs-target="#navId">
+
+         <div class="row g-0">
+            <div class="col-md-4 aside-col d-none d-md-inline">
+              <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end" style="background-color: rgb(242,243,247); position: fixed; width: 378px">
+               <div class="profile-id"></div>
+               <div class="text-d">
+                      <br>
+                  <h1>IBRAHIM</h1>
+                        <br>
+                  <span class="fs-4">UI/UX/DESIGNER</span>IN PHILIPPINES
+               </div>
+
+                <nav class="nav nav-pills flex-column">
+                  <div class="profile-list">
+                     <nav class="nav nav-pills flex-column">
+                     <a class="nav-link navfnt fs-4"  href="#home">HOME</a>
+                             <br>
+                     <a class="nav-link navfnt fs-4" href="#container-about">ABOUT</a>
+                            <br>
+                     <a class="nav-link navfnt fs-4" href="#contaioner-services">SERVICES</a>
+                             <br>
+                     <a class="nav-link navfnt fs-4" href="#container-skill1">SKILLS</a>
+                             <br>
+                     <a class="nav-link navfnt fs-4" href="#container-education">EDUCATION</a>
+                             <br>
+                  <a class="nav-link navfnt fs-4" href="#container-EXPERIENCE">EXPERIENCE</a>
+                                     <br>
+                     <a class="nav-link navfnt fs-4" href="#container-work">WORK</a>
+                              <br>
+                     <a class="nav-link navfnt fs-4" href="#container-blog">BLOG</a>
+                             <br>
+                     <a class="nav-link navfnt fs-4" href="#contaioner-contact">CONTACT</a>
+                       </nav>
+                  </div>
+                 
+                </nav>
+              </nav>
+            </div>
+          
+            <div class="col-md-8 col-sm-12 col-12">
+              <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0" >
+               <!-- home -->
+                <div id="home">
+                  <div id="profile-bg">
+
+                     <div class="text-">
+                        <h1>Hi!
+                           <br>
+                           I'm Jackson
+                        </h1>
+                     </div>
+                  </div>
+                </div>
+                  <!-- home -->
+
+                  <!-- About-start-->
+                  <div id="container-about" style="margin-top: 20%;">
+                     <div class="row g-5">
+                        <div class="abou-line-up">
+                           <p>ABOUT US</p>
+                                 <br>
+                           <h1>WHO AM I?</h1>
+                        </div>
+                           <div class="about-us-write-up col-sm-11 col-11">
+                              <p>
+                                <strong> Hi I'm Jackson</strong> Ford On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.
+                              </p>
+                                                                        <br>
+                              <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                           </div>
+                           <!-- About-us- box-1-->
+                           <div class="col-md-3 col-sm-11 col-12 ">
+                              <div id="#about">
+                                 <div class="box-1 shadow">
+                                    <div class="abtnf">
+                                       <p><i class="fa fa-lightbulb-o fa-4x text-primary px-4 mt-4 " aria-hidden="true"></i></p>
+                                    <h2 class="text-dark px-3 mt-5">Graphic Design</h2>
+                                    </div>
+                                    
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- About-us- box-1-->
+
+                           <!-- about-us-box-2-->
+                           <div class="col-md-3 col-sm-11 col-12">
+                              <div id="#ABOUT">
+                                 <div class="box-2 shadow">
+                                    <div class="abtnf">
+                                       <p><i class="fa  fa-globe fa-4x text-danger px-4 mt-4 " aria-hidden="true"></i></p>
+                                       <h2 class="text-dark px-3 mt-5">Web Design</h2>
+
+                                    </div>
+                                   
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- about-us-box-2-->
+
+                           <!-- about-us-box-3-->
+                           <div class="col-md-3 col-sm-11 col-12">
+                              <div id="#ABOUT">
+                                 <div class="box-3 shadow">
+                                    <div class="abtnf">
+                                       <p><i class="fa  fa-database fa-4x text-warning px-4 mt-4 " aria-hidden="true"></i></p>
+                                       <h2 class="text-dark px-3 mt-5">Software</h2>
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- about-us-box-3-->
+
+                           <!-- about-us-box-4 -->
+                           <div class="col-md-3 col-sm-11 col-12">
+                              <div id="#ABOUT">
+                                 <div class="box-4 shadow">
+                                    <div class="abtnf">
+                                       <p style="color: #a84cb8;"><i class="fa  fa-mobile fa-4x px-4 mt-4 " aria-hidden="true"></i></p>
+                                    <h2 class="text-dark px-3 mt-5">Application</h2>
+
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- about-us-box-4 -->
+
+                           <div class="container">
+                              <div class="col-md-12 col-sm-11 col-12">
+                                 <div class="hire-me">
+                                    <h2>I am happy to know you <br>
+                                       that 300+ projects done sucessfully</h2>
+                                       <button type="button" class="about-button">HIRE ME</button>
+                                 </div>
+
+                              </div>
+                           </div>
+
+                        
+                     </div>
+                  </div>
+
+
+                  <!-- About-end-->
+                 
+
+                <!-- services -->
+                <div id="contaioner-services" style="margin-top: 200px;">
+                  <div class="row">
+                     <div class="abou-line-up">
+                        <span>WHAT I DO?</span>
+                        <h1 class="mt-4">HERE ARE SOME OF MY <br> EXPERTISE</h1>
+                     </div>
+                     <div class="col-md-4 col-sm-11 col-12">
+                        <div id="#SERVICES">
+                           <div class="service-box shadow-lg color1-service">
+                              <div class="service-icon">
+                                 <p class="text-center mt-2"><i class="fa fa-lightbulb-o fa-4x ms2" aria-hidden="true"></i></p>
+                              </div>
+                              <div class="serv-box-1">
+                                 <p class="text-center fw-bold fs-3 ">INNOVATIVE IDEAS</p>
+                              </div>
+                              <div class="servi-p">
+                                 <p class="text-center mt-5">Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- box-2 -->
+                     <div class="col-md-4 col-sm-11 col-12">
+                        <div id="#SERVICES">
+                           <div class="service-box shadow-lg color2-service">
+                              <div class="service-icon">
+                                 <p class="text-center text-white mt-1"><i class="fa fa-database fa-4x ms2" aria-hidden="true"></i></p>
+                              </div>
+                              <div class="serv-box-1">
+                                 <p class="text-center fw-bold fs-3">SOFTWARE</p>
+                              </div>
+
+                              <div class="servi-p">
+                                 <p class="text-center mt-5" style="font-size: 15px;">Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- box-2 -->
+
+                     <!-- box-3 -->
+                     <div class="col-md-4 col-sm-11 col-12">
+                        <div id="#SERVICES">
+                           <div class="service-box shadow-lg color3-service">
+                              <div class="service-icon">
+                                 <p class="text-center text-white "><i class="fa fa-mobile fa-5x ms2" aria-hidden="true"></i></p>
+                              </div>
+                              <div class="serv-box-1">
+                                 <p class="text-center fw-bold fs-3">APPLICATION</p>
+                              </div>
+                              <div class="servi-p">
+                                 <p class="text-center mt-5" style="font-size: 15px;">Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+                              </div>
+                              
+                           </div>
+                        </div>
+                     </div>
+                     <!-- box-3 -->
+
+                     <!-- secondline-box-4 -->
+                     <div class="col-md-4 col-sm-11 col-12">
+                        <div id="#SERVICES">
+                           <div class="service-box shadow-lg color4-service">
+                              <div class="service-icon">
+                                 <p class="text-center mt-2"><i class="fa fa-th-large fa-4x ms2" aria-hidden="true"></i></p>
+                              </div>
+                              <div class="serv-box-1">
+                                 <p class="text-center fw-bold fs-3">GRAPHIC DESIGN</p>
+                              </div>
+                              <div class="servi-p">
+                                 <p class="text-center mt-5" style="font-size: 15px;">Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- secondline-box-4 -->
+
+                     <!--secondline-box-5 -->
+                     <div class="col-md-4 col-sm-11 col-12">
+                        <div id="#SERVICES">
+                           <div class="service-box shadow-lg color5-service">
+                              <div class="service-icon">
+                                 <p class="text-center mt-2"><i class="fa fa-database fa-4x ms2" aria-hidden="true"></i></p>
+                              </div>
+                              <div class="serv-box-1">
+                                 <p class="text-center fw-bold fs-3">SOFTWARE</p>
+                              </div>
+                              <div class="servi-p">
+                                 <p class="text-center mt-5" style="font-size: 15px;">Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                      <!--secondline-box-5 -->
+
+                        <!--secondline-box-6-->
+                        <div class="col-md-4 col-sm-11 col-12">
+                           <div id="#SERVICES">
+                              <div class="service-box shadow-lg color6-service">
+                                 <div class="service-icon">
+                                    <p class="text-center text-white"><i class="fa fa-mobile fa-5x ms2" aria-hidden="true"></i></p>
+                                 </div>
+                                 <div class="serv-box-1">
+                                    <p class="text-center fw-bold fs-3">APPLICATION</p>
+                                 </div>
+                                 <div class="servi-p">
+                                    <p class="text-center mt-5" style="font-size: 15px;">Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <!--secondline-box-6-->
+                        <div class="container-bg">
+                           <div class="col-md-12 col-sm-12 col-12">
+                              <div class="services-bg">
+
+                              </div>
+                              
+
+                           </div>
+                           
+                        </div>
+
+                  </div>
+                </div>
+               
+                <!-- skills-start -->
+                <div id="container-skill1" style="margin-top: 32%;">
+                  <div class="skills-">
+                     <p>MY SPECIALTY</p>
+                     <h2>MY SKILLS</h2>
+                  </div>
+                  <div class="skillsp mt-5">
+                     <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+                  </div>
+                  <div class="row">
+                     <div id="#skills">
+                        <div class="col-md-12 col-sm-11 col-12">
+                           <div class="row">
+                               <!-- one-progress -->
+                           <div class="col-md-6 col-sm-12 col-12">
+                              <div class="d-flex justify-content-between mt-5"><h4 class="text-black  ms-5 skillsp">Photoshop</h4>       <h3 class="text-primary fw-bold">74%</h3></div>
+                              <div class="progress ms-5" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                 <div class="progress-bar bg-success" style="width: 75%"></div>
+                               </div>
+                           </div>
+                           <!-- one-progress -->
+
+                            <!-- two-progress -->
+                           <div class="col-md-6 col-sm-12 col-12 ">
+                              <div class="d-flex justify-content-between mt-5 w-60"><h4 class="text-black ms-5 skillsp">jQuery</h4>       <h3 class="text-primary fw-bold ">60%</h3></div>
+                              <div class="progress ms-5 " role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                 <div class="progress-bar bg-danger" style="width: 60%">
+                                 </div>
+                               </div>
+                           </div>
+                           <!-- two-progress -->
+
+                           <!-- three-progress -->
+                           <div class="col-md-6 col-sm-12 col-12 ">
+                              <div class="d-flex justify-content-between mt-5 w-60"><h4 class="text-black ms-5 skillsp">HTML5</h4>       <h3 class="text-primary fw-bold ">85%</h3></div>
+                              <div class="progress ms-5 " role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                 <div class="progress-bar bg-warning" style="width: 85%">
+                                 </div>
+                               </div>
+                           </div>
+                            <!-- three-progress -->
+
+                            <!-- four-progress -->
+                            <div class="col-md-6 col-sm-12 col-12 ">
+                              <div class="d-flex justify-content-between mt-5 w-60"><h4 class="text-black ms-5 skillsp">CSS3</h4>       <h3 class="text-primary fw-bold ">90%</h3></div>
+                              <div class="progress ms-5 " role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                 <div class="progress-bar bg-secondary" style="width: 90%">
+                                 </div>
+                               </div>
+                           </div>
+                            <!-- four-progress -->
+
+                            <!-- five-progress -->
+                            <div class="col-md-6 col-sm-12 col-12 ">
+                              <div class="d-flex justify-content-between mt-5 w-60"><h4 class="text-black ms-5 skillsp">WordPress</h4>       <h3 class="text-primary fw-bold ">75%</h3></div>
+                              <div class="progress ms-5 " role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                 <div class="progress-bar bg-secondary-emphasis" style="width: 75%">
+                                 </div>
+                               </div>
+                           </div>
+                            <!-- five-progress -->
+
+                            <!-- sive-progress -->
+                            <div class="col-md-6 col-sm-12 col-12 ">
+                              <div class="d-flex justify-content-between mt-5 w-60"><h4 class="text-black ms-5 skillsp">SEO</h4>       <h3 class="text-primary fw-bold ">80%</h3></div>
+                              <div class="progress ms-5 " role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                 <div class="progress-bar bg-info" style="width: 80%">
+                                 </div>
+                               </div>
+                           </div>
+                            <!-- sive-progress -->
+                           </div>
+                        
+                        </div>
+                      </div>
+
+                  </div>
+               </div>
+                 <!-- skills-end-->
+
+                
+                <!-- education-start -->
+                <div id="container-education" style="margin-top: 19%;">
+                  <div class="educa-">
+                     <p>EDUCATION</p>
+                     <h1>EDUCATION</h1>
+                  </div>
+                  <div class="row">
+                     <div class="col-md-12 col-sm-11 col-12">
+                        <!-- education-list -->
+
+                        <div class="accordion ms-5 mt-5 pt-3" id="accordionExample">
+                           <div class="accordion-item">
+                             <h2 class="accordion-header">
+                               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                 <div class="acodifnt">
+                                    <h2 class="text-dark">MASTER DEGREE GRAPHIC DESIGN</h2>
+                                 </div>
+                                 
+                              
+                               </button>
+                             </h2>
+                             <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+
+                               <div class="accordion-body row">
+                                 <div class="col-md-6 col-sm-12 col-12 acod-write ">
+                                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                 </div>
+
+                                 <div class="col-md-6 acod-write">
+                                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                 </div>
+                               </div>
+
+                             </div>
+                           </div>
+
+                           <div class="accordion-item mt-2">
+                             <h2 class="accordion-header">
+                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                 <div class="acodifnt">
+                                    <h2 class="text-dark">BACHELOR DEGREE OF COMPUTER SCIENCE</h2>
+                                 </div>
+                               </button>
+                             </h2>
+                             <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                               <div class="accordion-body">
+                                 <div class="col-md-12 col-sm-12 col-12 acod-write">
+                                    Far far away, behind the word <strong> mountains,</strong> far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                                 </div>
+                                 <div class="col-md-8 col-sm-12 col-8 text-center mt-5 acod-write">
+                                    <li>Separated they live in Bookmarksgrove right</li>
+                                    <li>Separated they live in Bookmarksgrove right</li>
+                                 </div>
+                                 
+                               </div>
+                             </div>
+                           </div>
+
+                           <div class="accordion-item mt-2">
+                             <h2 class="accordion-header">
+                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                 <div class="acodifnt">
+                                    <h2 class="text-dark">DIPLOMA IN INFORMATION TECHNOLOGY</h2>
+                                 </div>
+                               </button>
+                             </h2>
+                             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                               <div class="accordion-body acod-write">
+                                 <p>Far far away, behind the word <strong>mountains,</strong> far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+
+                                 </p>
+                               </div>
+                             </div>
+                           </div>
+
+
+                           <div class="accordion-item mt-2">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                 <div class="acodifnt">
+                                    <h2 class="text-dark">DIPLOMA IN INFORMATION TECHNOLOGY</h2>
+                                 </div>
+                                </button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body acod-write">
+                                  <p>Far far away, behind the word <strong>mountains,</strong> far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+ 
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+
+
+                            <div class="accordion-item mt-2">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                 <div class="acodifnt">
+                                    <h2 class="text-dark">HIGH SCHOOL SECONDARY EDUCATION</h2>
+                                 </div>
+                                </button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body acod-write">
+                                  <p>Far far away, behind the word <strong>mountains,</strong> far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+ 
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                         </div>
+                        </div>
+                        
+                        <!-- education-list -->
+                     </div>
+                  </div>
+                </div>
+                <!-- education-end -->
+
+                <!--EDUCATION-WORK EXPERIENCE-start -->
+            <div id="container-EXPERIENCE" style="margin-top: 32%;">
+                  <div class="educa-">
+                     <p>EXPERIENCE</p>
+                     <h2>WORK EXPERIENCE</h2>
+                  </div>
+
+                  <div class="row g-0">
+
+                      <!--one-line-box-start-->
+                     <div class="col-md-2 col-sm-2 col-5">
+                        <div class="ms-5 px-3">
+                           <div class="icon-circle shadow-sm bg-primary">
+                              <p class="text-white text-center mt-2"><i class="fa fa-pencil fa-3x" aria-hidden="true"></i></p>
+                           </div>
+                           <div class="line-icon shadow-sm ms-5"></div>
+                        </div>
+                     </div>
+      
+                     <div class="col-md-9 col-sm-9 col-5 gap-0">
+                        <div class="d-flex">
+                                 <div class="element">
+                                    <p class="text-white"></p>
+                                 </div>
+
+                                 <div class="element-box">
+                                    <div class="elementfnt">
+                                       <p class="mt-4 fs-2 ms-4"> <strong> Full Stack Developer</strong> 2017-2018</p>
+
+                                    </div>
+                                    <p class="text-center ms-2 acod-write" style="margin-top: 25px; font-size: 16px;">Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.
+                                    </p>
+     
+                                 </div>
+                              </div>
+                                                         
+                           </div>
+                           <!--one-line-box-end-->
+
+                          <!--two-line-box-->
+                           <div class="col-md-2 col-sm-2 col-5">
+                              <div class="ms-5 px-3">
+                                 <div class="icon-circle-2 shadow-sm bg-danger">
+                                    <p class="text-white text-center mt-2"><i class="fa fa-pencil fa-3x" aria-hidden="true"></i></p>
+                                 </div>
+                                 <div class="line-icon-2 shadow-sm ms-5 "></div>
+                              </div>
+                           </div>
+
+
+                           <div class="col-md-9 col-sm-9 col-5 gap-0">
+                              <div class="d-flex">
+                                       <div class="element-2">
+                                          <p class="text-white"></p>
+                                       </div>
+      
+                                       <div class="element-box-2">
+                                          <p class="mt-4 fs-2 ms-4 elementfnt"> <strong> Front End Developer at Google Company </strong>2017-2018</p>
+                                          <p class="text-center ms-2 acod-write" style="margin-top: 18px; font-size: 16px;">Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.
+                                          </p>
+           
+                                          </div>
+                                    </div>
+                                                               
+                                 </div>
+                                 <!--two-line-box-->
+
+                                <!--three-line-box-->
+                              <div class="col-md-2 col-sm-2 col-5">
+                                    <div class="ms-5 px-3">
+                                       <div class="icon-circle-2 shadow-sm bg-warning">
+                                          <p class="text-white text-center mt-2"><i class="fa fa-pencil fa-3x" aria-hidden="true"></i></p>
+                                       </div>
+                                       <div class="line-icon-2 shadow-sm ms-5 "></div>
+                                    </div>
+                                 </div>
+
+                                 <div class="col-md-9 col-sm-9 col-5 gap-0">
+                                    <div class="d-flex">
+                                             <div class="element-2">
+                                                <p class="text-white"></p>
+                                             </div>
+            
+                                             <div class="element-box-2">
+                                                <p class="mt-4 fs-2 ms-4 elementfnt"> <strong> System Analyst  </strong> 2017-2018</p>
+                                                <p class="text-center ms-2 acod-write" style="margin-top: 18px; font-size: 16px;">Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.
+                                                </p>
+                 
+                                                </div>
+                                          </div>
+                                                                     
+                                       </div>
+
+                                       <!--three-line-box-->
+
+                      <!--four-line-box-->  
+                      <div class="col-md-2 col-sm-2 col-5">
+                        <div class="ms-5 px-3">
+                           <div class="icon-circle-2 shadow-sm" style="background-color: #a84cb8;">
+                              <p class="text-white text-center mt-2"><i class="fa fa-pencil fa-3x" aria-hidden="true"></i></p>
+                           </div>
+                           <div class="line-icon-2 shadow-sm ms-5 "></div>
+                        </div>
+                     </div>               
+                           
+                     <div class="col-md-9 col-sm-9 col-5 gap-0">
+                        <div class="d-flex">
+                                 <div class="element-2">
+                                    <p class="text-white"></p>
+                                 </div>
+
+                                 <div class="element-box-2">
+                                    <p class="mt-4 fs-2 ms-4 elementfnt"> <strong> Creative Designer  </strong>2017-2018</p>
+                                    <p class="text-center ms-2 acod-write" style="margin-top: 18px; font-size: 16px;">Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.
+                                    </p>
+     
+                                    </div>
+                              </div>
+                                                         
+                           </div>
+                           <!--four-line-box--> 
+
+
+
+
+                    <!--five-line-box-->   
+                    
+                    <div class="col-md-2 col-sm-2 col-5">
+                     <div class="ms-5 px-3">
+                        <div class="icon-circle-2 shadow-sm" style="background-color: rgb(47,164,153);">
+                           <p class="text-white text-center mt-2"><i class="fa fa-pencil fa-3x" aria-hidden="true"></i></p>
+                        </div>
+                        <div class="line-icon-2 shadow-sm ms-5 "></div>
+                     </div>
+                  </div>  
+
+
+                  <div class="col-md-9 col-sm-9 col-5 gap-0">
+                     <div class="d-flex">
+                              <div class="element-2">
+                                 <p class="text-white"></p>
+                              </div>
+
+                              <div class="element-box-2">
+                                 <p class="mt-4 fs-2 ms-4 elementfnt"> <strong> UI/UX Designer at Envato  </strong>2017-2018</p>
+                                 <p class="text-center ms-2 acod-write" style="margin-top: 18px; font-size: 16px;">Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.
+                                 </p>
+  
+                                 </div>
+                           </div>
+                                                      
+                        </div>
+
+                  <!--five-line-box-->  
+
+                  
+                  <div class="col-md-2 col-sm-2 col-5">
+                     <div class="ms-5 px-3">
+                        <div class="icon-circle-4">
+                           <!-- <p class="text-white text-center mt-2"><i class="fa fa-pencil fa-3x" aria-hidden="true"></i></p> -->
+                        </div>
+                        <!-- <div class="line-icon-2 shadow-sm ms-5 "></div> -->
+                     </div>
+                  </div> 
+                  </div>
+                  
+                </div>
+                <!-- EDUCATION- WORK EXPERIENCE-end -->
+
+
+
+
+
+                <!-- MY WORK-start -->
+               <div id="container-work" style="margin-top: 25%;">
+                  <div class="work-line">
+                     <p>MY WORK</p>
+                     <h2>RECENT WORK</h2>
+                  </div>
+                  <div class="row">
+                     <!-- work-1-box-start-->
+                        <div class="col-md-6 col-sm-11 col-12">
+                           <div class="container-work ">
+                              <div class="image">
+                                 <img class="img-fluid" src="static/images/work-pic-1.webp" alt="">
+                              </div>
+                             
+                        <div class="text-bg">
+                              <div class="text-list">
+                                 <!-- D-class-is-for-fnt -->
+                                 <h2 class="elementfnt">WORK 1</h2>
+                                       <br>
+                                 <p class="acod-write">Website</p>
+                                 <!-- D-class-is-for-fnt -->
+                              </div>
+
+                                   <div class="icon-list">
+
+                                    <div class="share-button">
+                                       <i class="fa fa-share-alt fa-2x mt-1 ms-2" aria-hidden="true"></i>
+                                    </div>
+
+                                    <div class="eye-button">
+                                        <p class="text-center  text-dark " style="font-size: 8px; "> <i class="fa fa-eye fa-2x mt-2" aria-hidden="true">   100</i></p>
+                                    </div>
+
+                                    <div class="heart-button">
+                                       <p class="text-center text-dark" style="font-size: 8px;"> <i class="fa fa-heart fa-2x mt-2" aria-hidden="true"> 49</i></p>
+
+                                    </div>
+                                 </div>  
+                            </div>
+                           </div>
+                        </div>
+                         <!-- work-1-box-end-->
+
+                         <!-- work-2-start -->
+                         <div class="col-md-6 col-sm-11 col-12">
+                           <div class="container-work ">
+                              <div class="image">
+                                 <img class="img-fluid" src="static/images/work-pic-2.webp" alt="">
+                              </div>
+                             
+                        <div class="text-bg">
+                              <div class="text-list">
+                                 <!-- D-class-is-for-fnt -->
+                                 <h2 class="elementfnt">WORK 2</h2>
+                                       <br>
+                                 <p class="acod-write">Amination</p>
+                                 <!-- D-class-is-for-fnt -->
+                              </div>
+
+                                   <div class="icon-list">
+
+                                    <div class="share-button">
+                                       <i class="fa fa-share-alt fa-2x mt-1 ms-2" aria-hidden="true"></i>
+                                    </div>
+
+                                    <div class="eye-button">
+                                        <p class="text-center  text-dark " style="font-size: 8px; "> <i class="fa fa-eye fa-2x mt-2" aria-hidden="true">   100</i></p>
+                                    </div>
+
+                                    <div class="heart-button">
+                                       <p class="text-center text-dark" style="font-size: 8px;"> <i class="fa fa-heart fa-2x mt-2" aria-hidden="true"> 49</i></p>
+
+                                    </div>
+                                 </div>  
+                            </div>
+                           </div>
+                        </div>
+                         <!-- work-2-end -->
+
+                         <!-- work-3-start -->
+                         <div class="col-md-6 col-sm-11 col-12">
+                           <div class="container-work ">
+                              <div class="image">
+                                 <img class="img-fluid" src="static/images/work-pic-3.webp" alt="">
+                              </div>
+                             
+                        <div class="text-bg">
+                              <div class="text-list">
+                                 <!-- D-class-is-for-fnt -->
+                                 <h2 class="elementfnt">WORK 3</h2>
+                                       <br>
+                                 <p class="acod-write">Illustration</p>
+                                 <!-- D-class-is-for-fnt -->
+                              </div>
+
+                                   <div class="icon-list">
+
+                                    <div class="share-button">
+                                       <i class="fa fa-share-alt fa-2x mt-1 ms-2" aria-hidden="true"></i>
+                                    </div>
+
+                                    <div class="eye-button">
+                                        <p class="text-center  text-dark " style="font-size: 8px; "> <i class="fa fa-eye fa-2x mt-2" aria-hidden="true">   100</i></p>
+                                    </div>
+
+                                    <div class="heart-button">
+                                       <p class="text-center text-dark" style="font-size: 8px;"> <i class="fa fa-heart fa-2x mt-2" aria-hidden="true"> 49</i></p>
+
+                                    </div>
+                                 </div>  
+                            </div>
+                           </div>
+                        </div>
+                         <!-- work-3-end-->
+
+                         <!-- work-4-start-->
+                         <div class="col-md-6 col-sm-11 col-12">
+                           <div class="container-work ">
+                              <div class="image">
+                                 <img class="img-fluid" src="static/images/work-pic-4.webp" alt="">
+                              </div>
+                             
+                        <div class="text-bg">
+                              <div class="text-list">
+                                  <!-- D-class-is-for-fnt -->
+                                 <h2 class="elementfnt">WORK 4</h2>
+                                       <br>
+                                 <p class="acod-write">Application</p>
+                                  <!-- D-class-is-for-fnt -->
+                              </div>
+
+                                   <div class="icon-list">
+
+                                    <div class="share-button">
+                                       <i class="fa fa-share-alt fa-2x mt-1 ms-2" aria-hidden="true"></i>
+                                    </div>
+
+                                    <div class="eye-button">
+                                        <p class="text-center  text-dark " style="font-size: 8px; "> <i class="fa fa-eye fa-2x mt-2" aria-hidden="true">   100</i></p>
+                                    </div>
+
+                                    <div class="heart-button">
+                                       <p class="text-center text-dark" style="font-size: 8px;"> <i class="fa fa-heart fa-2x mt-2" aria-hidden="true"> 49</i></p>
+
+                                    </div>
+                                 </div>  
+                            </div>
+                           </div>
+                        </div>
+                         <!-- work-4-end-->
+
+                         <!-- work-5-start-->
+                         <div class="col-md-6 col-sm-11 col-12">
+                           <div class="container-work ">
+                              <div class="image">
+                                 <img class="img-fluid" src="static/images/work-pic-5.webp" alt="">
+                              </div>
+                             
+                        <div class="text-bg">
+                              <div class="text-list">
+                                 <!-- D-class-is-for-fnt -->
+                                 <h2 class="elementfnt">WORK 5</h2>
+                                       <br>
+                                 <p class="acod-write">Graphic, Logo</p>
+                                 <!-- D-class-is-for-fnt -->
+                              </div>
+
+                                   <div class="icon-list">
+
+                                    <div class="share-button">
+                                       <i class="fa fa-share-alt fa-2x mt-1 ms-2" aria-hidden="true"></i>
+                                    </div>
+
+                                    <div class="eye-button">
+                                        <p class="text-center  text-dark " style="font-size: 8px; "> <i class="fa fa-eye fa-2x mt-2" aria-hidden="true">   100</i></p>
+                                    </div>
+
+                                    <div class="heart-button">
+                                       <p class="text-center text-dark" style="font-size: 8px;"> <i class="fa fa-heart fa-2x mt-2" aria-hidden="true"> 49</i></p>
+
+                                    </div>
+                                 </div>  
+                            </div>
+                           </div>
+                        </div>
+                         <!-- work-5-end-->
+
+                         <!-- work-6-start-->
+                         <div class="col-md-6 col-sm-11 col-12">
+                           <div class="container-work ">
+                              <div class="image">
+                                 <img class="img-fluid" src="static/images/work-pic-6.webp" alt="">
+                              </div>
+                             
+                        <div class="text-bg">
+                              <div class="text-list">
+                                 <!-- D-class-is-for-fnt -->
+                                 <h2 class="elementfnt">WORK 6</h2>
+                                       <br>
+                                 <p class="acod-write">Web Design</p>
+                                 <!-- D-class-is-for-fnt -->
+                              </div>
+
+                                   <div class="icon-list">
+
+                                    <div class="share-button">
+                                       <i class="fa fa-share-alt fa-2x mt-1 ms-2" aria-hidden="true"></i>
+                                    </div>
+
+                                    <div class="eye-button">
+                                        <p class="text-center  text-dark " style="font-size: 8px; "> <i class="fa fa-eye fa-2x mt-2" aria-hidden="true">   100</i></p>
+                                    </div>
+
+                                    <div class="heart-button">
+                                       <p class="text-center text-dark" style="font-size: 8px;"> <i class="fa fa-heart fa-2x mt-2" aria-hidden="true"> 49</i></p>
+
+                                    </div>
+                                 </div>  
+                            </div>
+                           </div>
+                        </div>
+                         <!-- work-6-end-->
+
+                         <!-- work-btn-start-->
+                         <div class="col-md-9 col-sm-9 col-9">
+                           <button type="button" class="work-btn"><h3 class="text-center elementfnt"><i class="fa fa-refresh" aria-hidden="true"></i> LOAD MORE</h3></button>
+                         </div>
+                         <!-- work-btn-end--> 
+                  </div>
+                </div>
+                <!-- MY WORK-end-->
+
+
+                <!-- MAIN-BLOG-START -->
+                <div id="container-blog" style="margin-top: 29%;">
+                  <div class="blog-head-lineup">
+                     <p>READ</p>
+                     <h1>RECENT BLOG</h1>
+                  </div>
+                  <div class="row">
+                     <!-- blog-box-one-start-->
+                     <div class="col-md-4 col-sm-11 col-12 ">
+                        <img class="img-fluid ms-3 new-img" src="static/images/blog-img-1.webp" alt="">
+
+                        <div class="d-flex ms-4" style="font-size: 11px; margin-top: 35px;">
+                           <p>APRIL 14, 2018 | WEB DESIGN | <span><i class="fa fa-comment-o fa-1x text-dark" aria-hidden="true"></i></span> 4</p>
+                        </div>
+                        <div class="blog-line">
+                           <h4 class="text-dark mt-4 ms-4">RENOVATING NATIONAL GALLERY</h4>
+
+                           <p class="text-dark ms-4">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                        </div>
+                     </div>
+                     <!-- blog-box--one-end-->
+
+                  <!-- blog-box--two-start-->
+                  <div class="col-md-4 col-sm-11 col-12   " >
+                     <img class="img-fluid ms-3  new-img" src="static/images/blog-img-2.webp" alt="">
+
+                     <div class="d-flex ms-4" style="font-size: 11px; margin-top: 35px;">
+                        <p>APRIL 14, 2018 | WEB DESIGN | <span><i class="fa fa-comment-o fa-1x text-dark" aria-hidden="true"></i></span> 4</p>
+                     </div>
+                     <div class="blog-line">
+                        <h4 class="text-dark mt-4 ms-4">WORDPRESS FOR A BEGINNER</h4>
+
+                        <p class="text-dark ms-4">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                     </div>
+                  </div>
+                   <!-- blog-box--two-end-->
+
+                   <!-- blog-box--three-start-->
+                   <div class="col-md-4 col-sm-11 col-12" >
+                        <img class="img-fluid ms-3 new-img" src="static/images/blog-img-3.webp" alt="">
+                     
+                        <div class="d-flex ms-4" style="font-size: 11px; margin-top: 35px;" >
+                           <p>APRIL 14, 2018 | WEB DESIGN | <span><i class="fa fa-comment-o fa-1x text-dark" aria-hidden="true"></i></span> 4</p>
+                        </div>
+                     
+                      <div class="blog-line">
+                        <h4 class="text-dark mt-4 ms-4">MAKE WEBSITE FROM SCRATCH</h4>
+
+                        <p class="text-dark ms-4">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+                     </div>
+                  </div>
+                   <!-- blog-box--three-end-->
+
+                   <!-- blog-buttom-start-->
+                   <div class="col-md-9 col-sm-8 col-9">
+                     <button type="button" class="blog-btn"><h3 class="text-center elementfnt"><i class="fa fa-refresh" aria-hidden="true"></i> LOAD MORE</h3></button>
+                   </div>
+                   <!-- blog-buttom-end-->
+
+
+
+
+
+                  </div>
+                </div>
+                 <!-- MAIN-BLOG-END-->
+
+
+                 <!-- OUR-SERVICES-START -->
+                 <div id="contaioner-contact" style="margin-top: 29%;">
+                  <div class="our-service-lineup">
+                     <p>GET IN TOUCH</p>
+                     <h1>CONTACT</h1>
+
+                  </div>
+
+                  <div class="row">
+
+                      
+                      
+   
+
+                     <!-- contact-us-start -->
+                    <div class="col-md-6 col-sm-12 col-12">
+                     <div class="blog-icon-box ">
+                        <p class="text-primary text-center mt-3 ms-4">  <i class="fa fa-microphone fa-5x" aria-hidden="true"></i></p>
+                        <div class="" style="margin-left: 95%; margin-top: px;">
+                           <h4 class="text-primary elementfnt">oladipupoibrahim10@gmail.com</h4>
+                        </div>
+                     </div>
+
+                     <div class="d-block ">
+                        <div class="col-md-6 ">
+
+                           <div class="ms-4">
+                              <div class="blog-icon-box  ">
+                                 <p class="text-primary text-center mt-3 ms-4"> <i class="fa fa-medium fa-3x" aria-hidden="true"></i> </p>
+                                 <div class="" style="margin-left: 95%; margin-top: px;">
+                                    <h2 class="text-dark elementfnt">sango.ota,lagos.Nigeria</h2>
+                                 </div>
+                              </div>
+
+                           </div>
+
+                          
+                           
+                        </div>
+
+                        <div class="col-md-6">
+                           <div class="ms-4">
+                              <div class="blog-icon-box ">
+                                 <p class="text-primary text-center mt-3 ms-4"> <i class="fa fa-phone fa-3x" aria-hidden="true"></i> </p>
+                                 <div class="" style="margin-left: 95%; margin-top: px;">
+                                    <h4 class="text-primary elementfnt">+234.9011233223</h4>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                    </div>
+                     <!-- contact-us-end-->
+
+
+                    <!-- message-input-start -->
+                    <div class="col-md-6 col-sm-11 col-12">
+                     <div style="margin-top: 56px;">
+                        <input type="text" class="form-control ms-3 mt-4" id="exampleFormControlInput1" placeholder="Name" style="height: 55px; font-size: 19px; background-color: rgb(242,243,247);
+                     border: 16px solid rgb(242,243,247);">
+
+                     </div>                     
+                     <div class="d-block">
+                        <div class="col-md-12 mt-5">
+                           <input type="text" class="form-control ms-3 mt-4" id="exampleFormControlInput1" placeholder="Email" style="height: 55px; font-size: 19px; background-color: rgb(242,243,247);
+                           border: 16px solid rgb(242,243,247);">
+
+                        </div>
+
+                        <div class="col-md-12">
+                           <input type="text" class="form-control ms-3 mt-4" id="exampleFormControlInput1" placeholder="Subject" style="height: 55px; font-size: 19px; background-color: rgb(242,243,247);
+                           border: 16px solid rgb(242,243,247);">
+
+                        </div>
+
+                        <div class="col-md-12">
+                           <div class="mt-4 ms-3">
+                              <textarea name="meesage" id="exampleFormControlInput1" rows="4"  class="form-control" style="font-size: 19px; background-color: rgb(242,243,247);" placeholder="Message"></textarea>
+                           </div>
+                        </div>
+                     </div>
+                    </div>
+                    <!-- message-input-end-->
+
+
+                    
+                        
+                     </div> 
+
+                      
+
+
+
+
+
+
+
+                     
+                    
+                    
+                      <!-- contact-us-start -->
+                     
+                   
+
+                  </div>
+
+                 </div>
+
+
+                 <!-- OUR-SERVICES-END -->
+
+
+                
+
+              </div>
+            </div>
+          </div>
+
+         
+
+         
+      </div>
+<!-- scrollable-container  -->      
+
+      </div>
+
+      
+   
+
+
+
+
+
+   
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src=""></script>
+<script src="static/js/javascript.js"></script>
+<script src="static/js/jquery-3.6.1.min.js"></script>
+<script src="static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
